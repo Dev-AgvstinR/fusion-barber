@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiInstagram, FiMapPin, FiMenu, FiX } from "react-icons/fi";
+import { FiInstagram, FiMapPin, FiMenu, FiUser, FiX } from "react-icons/fi";
 
 import logo from "../assets/logo_png.png";
 
@@ -8,21 +8,20 @@ export default function Navbar() {
 
   return (
     <header className="relative z-50 w-full border-black border-b border-black/10 bg-[#f5f5f2] text-black p-[15px] sticky top-0 left-0 right-0">
-      <nav className="relative flex h-[100px] items-center justify-around px-6 md:px-10">
+      <nav className="relative flex h-[88px] items-center justify-around px-6 md:px-10">
         {/* LEFT */}
         <div className="hidden items-center gap-7 md:flex ">
-          <a
-            href="#servicios"
-            className="text-sm font-semibold uppercase tracking-wide transition-opacity hover:opacity-50"
-          >
-            Servicios
-          </a>
-
           <a
             href="#nosotros"
             className="text-sm font-semibold uppercase tracking-wide transition-opacity hover:opacity-50"
           >
             Nosotros
+          </a>
+          <a
+            href="#servicios"
+            className="text-sm font-semibold uppercase tracking-wide transition-opacity hover:opacity-50"
+          >
+            Servicios
           </a>
 
           <a
@@ -67,9 +66,10 @@ export default function Navbar() {
             href="https://wa.me/543876196619"
             target="_blank"
             rel="noreferrer"
-            className="group relative text-sm font-semibold uppercase tracking-wide"
+            className="group relative text-sm font-semibold uppercase tracking-wide flex gap-1"
           >
-            Reservar turno
+            Acceso
+            <FiUser />
             <span className="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-black transition-transform duration-300 group-hover:origin-left group-hover:scale-x-100" />
           </a>
         </div>
